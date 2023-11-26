@@ -35,10 +35,70 @@ body {
   line-height: 1.5;
   box-sizing: border-box;
   font-family: "Inter";
+  background-color: #fafafa;
 }
 
-h1 {
-  color: #ff0000;
+.container {
+  max-width: 1420px;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.tabBarPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.tabBarPage .tabs {
+  max-width: 675px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Hide all tabs */
+  /* Show active tab */
+}
+.tabBarPage .tabs .tab-links {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.tabBarPage .tabs li {
+  flex: 1;
+  padding: 1rem;
+  background-color: #0c6ed4;
+  border-right: 2px solid #fafafa;
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+}
+.tabBarPage .tabs li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.tabBarPage .tabs li.active {
+  background-color: #ffc700;
+  font-weight: bold;
+}
+.tabBarPage .tabs li.active a {
+  color: #000;
+}
+.tabBarPage .tabs .tab-content {
+  padding-top: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+.tabBarPage .tabs .tab-content .tab {
+  display: none;
+}
+.tabBarPage .tabs .tab-content .active {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

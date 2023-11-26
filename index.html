@@ -4,10 +4,86 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./asset/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<title>tab Bar With Animation</title>
 	</head>
 	<body>
-		<h1>Hi there, My dev friends 🤓</h1>
+		<div class="main">
+			<div class="tabBarPage">
+				<div class="container">
+					<div class="tabs">
+						<ul class="tab-links">
+							<li class="active"><a href="#tab1">Tab 1</a></li>
+							<li><a href="#tab2">Tab 2</a></li>
+							<li><a href="#tab3">Tab 3</a></li>
+						</ul>
+
+						<div class="tab-content">
+							<div id="tab1" class="tab active">
+								<!-- Tab 1 content -->
+								<div class="tabWrapper animate__animated animate__bounce">
+									<h3>Content for Tab 1</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+										repudiandae eaque distinctio consequuntur molestiae quos magni
+										voluptatum sunt laborum sapiente veritatis quis earum quod
+										perspiciatis quia, nemo eius tempore ratione.
+									</p>
+
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+										repudiandae eaque distinctio consequuntur molestiae quos magni
+										voluptatum sunt laborum sapiente veritatis quis earum quod
+										perspiciatis quia, nemo eius tempore ratione.
+									</p>
+								</div>
+							</div>
+
+							<div id="tab2" class="tab">
+								<!-- Tab 2 content -->
+								<div class="tabWrapper animate__animated animate__bounce">
+									<h3>Content for Tab 2</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+										repudiandae eaque distinctio consequuntur molestiae quos magni
+										voluptatum
+									</p>
+
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+										repudiandae eaque distinctio consequuntur molestiae quos magni
+										voluptatum sunt laborum sapiente veritatis quis earum quod
+										perspiciatis quia, nemo eius tempore ratione.
+									</p>
+								</div>
+							</div>
+
+							<div id="tab3" class="tab">
+								<!-- Tab 3 content -->
+								<div class="tabWrapper animate__animated animate__bounce">
+									<h3>Content for Tab 3</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+										repudiandae eaque distinctio consequuntur molestiae quos magni
+										voluptatum Lorem ipsum dolor sit amet consectetur
+									</p>
+
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+										repudiandae eaque distinctio consequuntur molestiae quos magni
+										voluptatum sunt laborum sapiente veritatis quis earum quod
+										perspiciatis quia, nemo eius tempore ratione.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<script src="./asset/js/libs/jquery.js"></script>
 		<script src="./asset/js/main.js"></script>
 	</body>
