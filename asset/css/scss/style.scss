@@ -30,9 +30,11 @@
 
 // color variable
 
-$primary-color: red;
+$primary-color: #0c6ed4;
+$gray-200: #fafafa;
 $white: #fff;
 $black: #000;
+$yellow-color: #ffc700;
 
 html {
 	overflow-x: hidden;
@@ -46,8 +48,72 @@ body {
 	line-height: 1.5;
 	box-sizing: border-box;
 	font-family: 'Inter';
+	background-color: $gray-200;
 }
 
-h1 {
-	color: $red-color;
+.container {
+	max-width: 1420px;
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.tabBarPage {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	.tabs {
+		max-width: 675px;
+		margin-top: 100px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.tab-links {
+			padding-left: 0;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0;
+		}
+		li {
+			flex: 1;
+			padding: 1rem;
+			background-color: $primary-color;
+			border-right: 2px solid $gray-200;
+			text-align: center;
+			transition: 0.2s all ease-in-out;
+
+			a {
+				color: $white;
+				text-decoration: none;
+				text-align: center;
+				width: 100%;
+				text-transform: uppercase;
+				display: inline-block;
+			}
+
+			&.active {
+				background-color: $yellow-color;
+				font-weight: bold;
+
+				a {
+					color: $black;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		padding-top: 1rem;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		padding: 1.5rem;
+		.tab {
+			display: none;
+		}
+	}
+	/* Show active tab */
+	.tab-content .active {
+		display: block;
+	}
 }
